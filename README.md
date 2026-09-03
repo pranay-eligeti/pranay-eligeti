@@ -57,13 +57,13 @@ My strongest experience is in healthcare and operations automation, where I have
 
 ---
 
-## 💼 Currently Working At
+## 💼 Current Role
 
-**Outreach Analyst — Beehive Software Services Pvt. Ltd.**
+**Outreach Analyst — 24/7 DCT & PureMed Group**
 
-Assigned to **Pure Medical Group (PMG)**, where I work on automation and operations systems involving healthcare data processing, outreach workflows, browser automation, and AI-assisted document processing.
+Working on healthcare outreach and operations automation involving data processing, workflow automation, browser automation, and AI-assisted document processing.
 
-I was promoted from **Data Co-ordinator to Outreach Analyst in August 2026**.
+Promoted from **Data Co-ordinator to Outreach Analyst in August 2026**.
 
 ---
 
