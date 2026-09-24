@@ -1,90 +1,85 @@
-# Hi there, I'm Pranay Eligeti 👋
+# Hi, I'm Pranay Eligeti 👋
 
-### AI Automation Developer | Python · LLM Integration · Workflow Automation
+### AI Automation Developer | AI Engineering | LLM & Agentic Systems | Python | Data Engineering
 
-I build practical automation systems that turn repetitive business processes into reliable workflows — combining **Python, browser automation, APIs, n8n, and LLMs**.
+I build AI-enabled automation and data systems that move work from **manual processes to reliable, repeatable software**.
 
-My strongest experience is in healthcare and operations automation, where I have worked on lead-data pipelines, web scraping, outreach workflows, document extraction, and browser-based data entry.
-
----
-
-## 🚀 What I Build
-
-- 🤖 **AI & LLM Integration** — Anthropic Claude API, Ollama, Open WebUI, structured extraction and normalization
-- 🔄 **Workflow Automation** — n8n, webhook-driven pipelines, Monday.com integrations, automated re-processing
-- 🕷️ **Web & Browser Automation** — Python, Playwright, Selenium, browser-based data collection and validation
-- 📊 **Data Pipelines** — cleaning, filtering, deduplication, validation and structured CSV/Excel output
-- 📄 **Document Automation** — PDF/EOB extraction, Excel processing and business-system data preparation
+My hands-on work spans **Python, LLM APIs, MCP, n8n, browser automation, APIs, data pipelines, document extraction, vector search, and operational reporting**.
 
 ---
 
-## 🛠️ Core Stack
+## What I Build
 
-**Languages & Libraries**
+- 🤖 **LLM & Agentic Systems** — Claude/OpenAI APIs, structured outputs, tool-oriented workflows, MCP
+- 🔄 **Workflow Automation** — n8n, webhooks, API orchestration, Monday.com and business-system integrations
+- 🐍 **Python & Data Engineering** — pandas, validation, ETL, deduplication, CSV/Excel processing, API ingestion
+- 🕷️ **Browser Automation** — Playwright, Selenium, browser-based data collection and workflow execution
+- 📄 **Document AI** — PDF/EOB extraction, normalization, structured outputs, downstream system mapping
+- 📊 **Operational Systems** — dashboards, reporting pipelines, data-quality controls, automated business workflows
+
+---
+
+## Engineering Focus
+
+**Current direction**
+
+Python fundamentals → SQL/API engineering → testing → RAG → agents/MCP → evaluation → observability → Docker/CI → Azure
+
+The goal is simple: build systems I can **read, write, debug, test, explain, and defend**.
+
+---
+
+## Selected Projects
+
+| Project | Engineering focus |
+| --- | --- |
+| [🏥 Healthcare Lead Automation](https://github.com/pranay-eligeti/healthcare-lead-automation) | Python data pipeline with configurable filtering, validation, deduplication, anomaly handling, tests and CI |
+| [🗺️ Google Maps Healthcare Scraper](https://github.com/pranay-eligeti/google-maps-healthcare-scraper) | Python browser automation, data extraction, normalization and Places validation |
+| [📄 PDF EOB Extractor](https://github.com/pranay-eligeti/pdf-eob-extractor) | PDF parsing, LLM-assisted structured extraction and Business Central-ready mapping |
+| [📋 SimplePractice Form Automation](https://github.com/pranay-eligeti/simplepractice-form-automation) | Playwright automation, Excel-driven workflows and recovery/logging patterns |
+| [📈 Telegram-to-MT5 Trading Bot](https://github.com/pranay-eligeti/telegram-mt5-trading-bot) | Async event processing, multilingual signal parsing and automated execution |
+
+---
+
+## Core Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
-
-**Automation & Scraping**
-
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=selenium&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
-
-**AI / LLM**
-
-![Anthropic](https://img.shields.io/badge/Anthropic_Claude-191919?style=flat&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logoColor=white)
-
-**APIs & Platforms**
-
-![Monday.com](https://img.shields.io/badge/Monday.com-F62B54?style=flat&logo=monday&logoColor=white)
-![Google Maps](https://img.shields.io/badge/Google_Maps_API-4285F4?style=flat&logo=googlemaps&logoColor=white)
-![Microsoft Dynamics](https://img.shields.io/badge/Microsoft_Dynamics_365-5E5E5E?style=flat&logo=microsoft&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Claude_API-191919?style=flat&logo=anthropic&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-000000?style=flat&logo=openai&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 
 ---
 
-## 📌 Featured Projects
+## Professional Experience
 
-| Project | What it demonstrates | Stack |
-| --- | --- | --- |
-| [🏥 Healthcare Lead Automation](https://github.com/pranay-eligeti/healthcare-lead-automation) | 14-step healthcare data pipeline with automated filtering, validation, deduplication and structured output across 14 specialties and 4 states | Python · n8n · pandas · Monday.com · Google Places |
-| [🗺️ Google Maps Healthcare Scraper](https://github.com/pranay-eligeti/google-maps-healthcare-scraper) | Browser-based healthcare data collection with parallel email fetching, normalization and Places validation | Python · Playwright · tkinter · Google Places |
-| [📄 PDF EOB Extractor](https://github.com/pranay-eligeti/pdf-eob-extractor) | AI-assisted extraction of billing data from EOB PDFs and mapping into Business Central journal format | Python · pdfplumber · PyMuPDF · Claude API |
-| [📋 SimplePractice Form Automation](https://github.com/pranay-eligeti/simplepractice-form-automation) | End-to-end browser automation for multi-page client intake workflows driven from Excel | Python · Playwright · openpyxl |
-| [📈 Telegram-to-MT5 Trading Bot](https://github.com/pranay-eligeti/telegram-mt5-trading-bot) | Real-time message capture, multilingual signal parsing and automated MetaTrader 5 execution | Python · Telethon · Claude API · MetaTrader5 |
+I work on healthcare and operations automation, including provider-data acquisition, multi-step data cleaning and standardization, AI-assisted document processing, browser automation, workflow orchestration, and operational reporting.
+
+My professional work includes private systems that **cannot be published publicly**. The repositories here are sanitized portfolio implementations or independently publishable projects intended to demonstrate engineering patterns without exposing PHI, credentials, internal data, or proprietary code.
 
 ---
 
-## 💼 Current Role
+## What I'm Building Next
 
-**Outreach Analyst — 24/7 DCT & PureMed Group**
-
-Working on healthcare outreach and operations automation involving data processing, workflow automation, browser automation, and AI-assisted document processing.
-
-Promoted from **Data Co-ordinator to Outreach Analyst in August 2026**.
-
----
-
-## 📊 What I Have Worked On
-
-- Built a **14-step Python healthcare lead pipeline** producing **37+ verified specialty/state outputs** with automated validation and no manual file processing.
-- Connected **Monday.com → n8n → Python** so flagged contacts can automatically trigger data re-processing.
-- Built **Python + Playwright** browser automation for healthcare data collection and validation.
-- Developed **Claude API** workflows for structured extraction from semi-structured text and EOB documents.
-- Automated repetitive operational workflows involving outreach, shipping labels, Excel processing and business-system data preparation.
+- RAG knowledge assistant
+- AI evaluation harness
+- Production Python AI API
+- MCP server/tool layer
+- Docker + CI/CD deployment
+- Azure AI/data deployment
 
 ---
 
-## 📫 Connect With Me
+## Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/pranay-eligeti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pranay-eligeti)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/pranay-eligeti)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:pranayyeligeti@gmail.com)
 
 ---
 
-### 🎯 Open to
-
-Remote opportunities in **AI automation, Python automation, workflow automation, web automation, and data engineering**.
+### Building toward production AI engineering — one defensible project at a time.
