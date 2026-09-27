@@ -2,7 +2,13 @@ name: RAG CI
 
 on:
   push:
+    paths:
+      - "projects/rag-knowledge-assistant/**"
+      - ".github/workflows/rag-ci.yml"
   pull_request:
+    paths:
+      - "projects/rag-knowledge-assistant/**"
+      - ".github/workflows/rag-ci.yml"
 
 env:
   PYTHONPATH: ${{ github.workspace }}/projects/rag-knowledge-assistant
