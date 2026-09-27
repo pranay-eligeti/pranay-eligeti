@@ -1,0 +1,16 @@
+[project]
+name = "mcp-n8n-agent-gateway"
+version = "0.1.0"
+description = "Typed MCP gateway with an allowlisted n8n workflow adapter"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp>=2,<3",
+  "httpx>=0.28,<1",
+  "pydantic>=2,<3"
+]
+
+[project.optional-dependencies]
+dev = [
+  "anyio>=4,<5",
+  "pytest>=8,<9"
+]
