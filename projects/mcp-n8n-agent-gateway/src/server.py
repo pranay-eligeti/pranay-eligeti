@@ -1,20 +1,26 @@
 """MCP server exposing typed, allowlisted workflow actions."""
 from __future__ import annotations
+
 from typing import Any
+
 from mcp.server import MCPServer
 from mcp.server.mcpserver.exceptions import ToolError
+
 from .n8n import N8nWorkflowAdapter
 
 mcp = MCPServer(
     "AI Automation Gateway",
     instructions="Use only allowlisted workflow names. Do not transmit secrets or sensitive records through demo workflows.",
 )
+
 adapter = N8nWorkflowAdapter()
+
 
 @mcp.tool(title="List allowed workflows")
 def list_workflows() -> list[str]:
     """Return workflow names explicitly allowed by configuration."""
     return sorted(adapter.allowed_workflows)
+
 
 @mcp.tool(title="Validate workflow request")
 def validate_workflow(workflow: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -23,12 +29,23 @@ def validate_workflow(workflow: str, payload: dict[str, Any] | None = None) -> d
         adapter.assert_allowed(workflow)
     except ValueError as exc:
         raise ToolError(str(exc)) from exc
-    return {"workflow": workflow, "valid": True, "payload_keys": sorted((payload or {}).keys())}
+    return {
+        "workflow": workflow,
+        "valid": True,
+        "payload_keys": sorted((payload or {}).keys()),
+    }
+
 
 @mcp.tool(title="Dispatch workflow")
-async def dispatch_workflow(workflow: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
+async def dispatch_workflow(
+    workflow: str, payload: dict[str, Any] | None = None
+) -> dict[str, Any]:
     """Dispatch an explicitly allowlisted workflow through the n8n adapter."""
-    return {"workflow": workflow, **await adapter.dispatch(workflow, payload or {})}
+    try:
+        return {"workflow": workflow, **await adapter.dispatch(workflow, payload or {})}
+    except ValueError as exc:
+        raise ToolError(str(exc)) from exc
+
 
 if __name__ == "__main__":
     mcp.run()
