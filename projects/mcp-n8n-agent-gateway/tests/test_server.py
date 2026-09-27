@@ -16,7 +16,7 @@ async def test_allowlisted_dispatch(monkeypatch):
     monkeypatch.setattr(server.adapter, "base_url", "")
     async with Client(mcp, raise_exceptions=True) as client:
         result = await client.call_tool("dispatch_workflow", {"workflow": "demo_sync", "payload": {"source": "synthetic"}})
-        data = result.structured_content["result"]
+        data = result.structured_content
         assert data["status"] == "simulated"
         assert data["workflow"] == "demo_sync"
 
