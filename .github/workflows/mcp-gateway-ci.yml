@@ -5,7 +5,7 @@ on:
   pull_request:
 
 env:
-  PYTHONPATH: projects/mcp-n8n-agent-gateway
+  PYTHONPATH: ${{ github.workspace }}/projects/mcp-n8n-agent-gateway
 
 jobs:
   test:
