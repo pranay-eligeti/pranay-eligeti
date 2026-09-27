@@ -13,7 +13,7 @@ def make_engine():
 
 def test_chunker_preserves_source_and_creates_chunks():
     chunks = chunk_text("one two three four five six seven eight nine ten", "handbook.md", chunk_size=5, overlap=1)
-    assert len(chunks) == 2
+    assert len(chunks) == 3
     assert all(chunk.source == "handbook.md" for chunk in chunks)
 
 
