@@ -4,7 +4,7 @@
 
 ## What this demonstrates
 
-This project is the public portfolio implementation of an MCP-based automation pattern.
+This project is a public portfolio implementation of an MCP-based automation pattern.
 
 It demonstrates:
 
@@ -15,6 +15,8 @@ It demonstrates:
 - an n8n HTTP adapter
 - deterministic simulated mode for local development and CI
 - in-memory MCP protocol tests
+- Streamable HTTP deployment shape
+- Docker packaging
 - a clear boundary between AI intent and operational actions
 
 The official MCP Python SDK currently documents v2 as the stable release and supports MCP servers, clients, tools and standard transports. Its testing guidance uses an in-memory `Client(mcp)` connection so the actual protocol path can be tested without launching a server process. citeturn764085search5turn764085search0
@@ -66,19 +68,22 @@ approved workflow
 external action
 ```
 
-This makes the gateway a useful safety and architecture boundary rather than simply exposing an HTTP endpoint to a model.
+This makes the gateway a policy boundary rather than simply exposing a generic HTTP endpoint to a model.
 
 ## Repository structure
 
 ```text
 mcp-n8n-agent-gateway/
 ├── .github/workflows/ci.yml
+├── Dockerfile
 ├── src/
 │   ├── __init__.py
+│   ├── app.py
 │   ├── models.py
 │   ├── n8n.py
 │   └── server.py
 ├── tests/
+│   ├── test_http_app.py
 │   └── test_server.py
 ├── .env.example
 ├── pyproject.toml
@@ -86,8 +91,6 @@ mcp-n8n-agent-gateway/
 ```
 
 ## Quick start
-
-From this profile repository:
 
 ```bash
 cd projects/mcp-n8n-agent-gateway
@@ -103,13 +106,25 @@ pip install -e ".[dev]"
 pytest -q
 ```
 
-Run the MCP server over stdio:
+Run the stdio MCP server:
 
 ```bash
 python -m src.server
 ```
 
-The official SDK also supports Streamable HTTP. `MCPServer.streamable_http_app()` returns an ASGI application that can be served by an ASGI server such as Uvicorn. citeturn543646search2
+Run Streamable HTTP locally:
+
+```bash
+uvicorn src.app:app --host 127.0.0.1 --port 8000
+```
+
+The MCP endpoint is `http://127.0.0.1:8000/mcp`. The official SDK exposes `streamable_http_app()` as an ASGI application that can be served by Uvicorn or another ASGI host. citeturn543646search2turn543646search0
+
+Health endpoint:
+
+```text
+GET /health
+```
 
 ## Local simulated mode
 
@@ -117,7 +132,7 @@ The gateway is intentionally safe by default.
 
 Without `N8N_BASE_URL`, `dispatch_workflow` returns a simulated result and never calls an external service.
 
-Example configuration:
+Example:
 
 ```env
 N8N_BASE_URL=
@@ -135,29 +150,26 @@ N8N_API_TOKEN=...
 N8N_ALLOWED_WORKFLOWS=demo_sync,demo_report
 ```
 
-Only allowlisted logical workflow names can be dispatched. The adapter sends a POST request to:
+Only allowlisted logical workflow names can be dispatched.
 
-```text
-{N8N_BASE_URL}/webhook/{workflow}
+Real deployments should add authentication, authorization, audit logging, retries/idempotency, network controls and secret management appropriate to the environment.
+
+## Docker
+
+```bash
+docker build -t mcp-n8n-agent-gateway .
+docker run --rm -p 8000:8000 mcp-n8n-agent-gateway
 ```
-
-Real deployments should add authentication, authorization, audit logging, retries/idempotency and deployment-specific network controls.
 
 ## Testing
 
-Tests use the official SDK's in-memory client pattern. This lets CI exercise tool discovery and real MCP tool calls without opening a port or launching a subprocess. citeturn764085search0
+The tests use the official SDK's in-memory client pattern. Tool discovery and real MCP tool calls are exercised without launching a subprocess or opening a port. citeturn764085search0
 
 ## Security boundary
 
-Never commit:
+Never commit PHI, production credentials, private n8n URLs, employer-only workflow definitions, or sensitive records.
 
-- PHI or other sensitive healthcare data
-- n8n credentials or API keys
-- production webhook URLs that should remain private
-- employer-only workflow definitions
-- session data or secrets
-
-The public project uses explicit allowlisting and simulated mode to keep the demo deterministic and safe.
+The gateway uses explicit allowlisting and simulated default mode to keep the portfolio project deterministic and safe.
 
 ## Portfolio note
 
@@ -165,7 +177,7 @@ The important engineering pattern is:
 
 **AI intent → typed MCP contract → policy boundary → workflow adapter → controlled action**
 
-This is the foundation for the more advanced agentic systems in my roadmap.
+This is the foundation for the RAG, evaluation and production AI projects in my roadmap.
 
 ## Author
 
