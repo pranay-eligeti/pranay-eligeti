@@ -38,6 +38,7 @@ The goal is simple: build systems I can **read, write, debug, test, explain, and
 | [📄 PDF EOB Extractor](https://github.com/pranay-eligeti/pdf-eob-extractor) | PDF parsing, LLM-assisted structured extraction and Business Central-ready mapping |
 | [📋 SimplePractice Form Automation](https://github.com/pranay-eligeti/simplepractice-form-automation) | Playwright automation, Excel-driven workflows and recovery/logging patterns |
 | [📈 Telegram-to-MT5 Trading Bot](https://github.com/pranay-eligeti/telegram-mt5-trading-bot) | Async event processing, multilingual signal parsing and automated execution |
+| [🔌 MCP → n8n Agentic Gateway](./projects/mcp-n8n-agent-gateway/) | Typed MCP tools, allowlisted workflow dispatch, policy boundary, n8n adapter, in-memory protocol tests |
 
 ---
 
@@ -68,7 +69,6 @@ My professional work includes private systems that **cannot be published publicl
 - RAG knowledge assistant
 - AI evaluation harness
 - Production Python AI API
-- MCP server/tool layer
 - Docker + CI/CD deployment
 - Azure AI/data deployment
 
