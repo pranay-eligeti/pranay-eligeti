@@ -2,7 +2,13 @@ name: MCP Gateway CI
 
 on:
   push:
+    paths:
+      - "projects/mcp-n8n-agent-gateway/**"
+      - ".github/workflows/mcp-gateway-ci.yml"
   pull_request:
+    paths:
+      - "projects/mcp-n8n-agent-gateway/**"
+      - ".github/workflows/mcp-gateway-ci.yml"
 
 env:
   PYTHONPATH: ${{ github.workspace }}/projects/mcp-n8n-agent-gateway
