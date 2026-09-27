@@ -2,6 +2,7 @@
 from __future__ import annotations
 from typing import Any
 from mcp.server import MCPServer
+from mcp.server.mcpserver.exceptions import ToolError
 from .n8n import N8nWorkflowAdapter
 
 mcp = MCPServer(
@@ -18,7 +19,10 @@ def list_workflows() -> list[str]:
 @mcp.tool(title="Validate workflow request")
 def validate_workflow(workflow: str, payload: dict[str, Any] | None = None) -> dict[str, Any]:
     """Validate a workflow request without dispatching it."""
-    adapter.assert_allowed(workflow)
+    try:
+        adapter.assert_allowed(workflow)
+    except ValueError as exc:
+        raise ToolError(str(exc)) from exc
     return {"workflow": workflow, "valid": True, "payload_keys": sorted((payload or {}).keys())}
 
 @mcp.tool(title="Dispatch workflow")
