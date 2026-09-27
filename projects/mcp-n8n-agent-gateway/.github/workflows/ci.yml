@@ -1,0 +1,23 @@
+name: MCP Gateway CI
+
+on:
+  push:
+  pull_request:
+
+env:
+  PYTHONPATH: projects/mcp-n8n-agent-gateway
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install project
+        working-directory: projects/mcp-n8n-agent-gateway
+        run: pip install -e ".[dev]"
+      - name: Run tests
+        working-directory: projects/mcp-n8n-agent-gateway
+        run: pytest -q
