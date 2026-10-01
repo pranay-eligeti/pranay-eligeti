@@ -1,85 +1,48 @@
-# Hi, I'm Pranay Eligeti 👋
+# Pranay Eligeti
 
-### AI Automation Developer | AI Engineering | LLM & Agentic Systems | Python | Data Engineering
+**AI Automation Developer | Python & Workflow Automation | RAG & LLM Evaluation | Generative AI | Data Pipelines & Systems Integration**
 
-I build AI-enabled automation and data systems that move work from **manual processes to reliable, repeatable software**.
-
-My hands-on work spans **Python, LLM APIs, MCP, n8n, browser automation, APIs, data pipelines, document extraction, vector search, and operational reporting**.
-
----
+I build applied AI systems, Python data pipelines, and workflow integrations that turn operational needs into reliable, testable software.
 
 ## What I Build
 
-- 🤖 **LLM & Agentic Systems** — Claude/OpenAI APIs, structured outputs, tool-oriented workflows, MCP
-- 🔄 **Workflow Automation** — n8n, webhooks, API orchestration, Monday.com and business-system integrations
-- 🐍 **Python & Data Engineering** — pandas, validation, ETL, deduplication, CSV/Excel processing, API ingestion
-- 🕷️ **Browser Automation** — Playwright, Selenium, browser-based data collection and workflow execution
-- 📄 **Document AI** — PDF/EOB extraction, normalization, structured outputs, downstream system mapping
-- 📊 **Operational Systems** — dashboards, reporting pipelines, data-quality controls, automated business workflows
+- **AI and retrieval systems:** document ingestion, chunking, TF-IDF and dense retrieval, source attribution, and LLM API integration.
+- **Evaluation infrastructure:** deterministic retrieval and citation metrics, semantic LLM judges, structured reports, and quality gates.
+- **Automation and data systems:** configurable cleaning pipelines, spreadsheet-driven browser workflows, document extraction, and validated outputs.
+- **Workflow and API integration:** n8n orchestration, REST APIs, typed MCP tools, action policies, and audit events.
 
----
+## Featured Engineering Projects
 
-## Engineering Focus
-
-**Current direction**
-
-Python fundamentals → SQL/API engineering → testing → RAG → agents/MCP → evaluation → observability → Docker/CI → Azure
-
-The goal is simple: build systems I can **read, write, debug, test, explain, and defend**.
-
----
-
-## Selected Projects
-
-| Project | Engineering focus |
+| Project | Implemented engineering |
 | --- | --- |
-| [🏥 Healthcare Lead Automation](https://github.com/pranay-eligeti/healthcare-lead-automation) | Python data pipeline with configurable filtering, validation, deduplication, anomaly handling, tests and CI |
-| [🗺️ Google Maps Healthcare Scraper](https://github.com/pranay-eligeti/google-maps-healthcare-scraper) | Python browser automation, data extraction, normalization and Places validation |
-| [📄 PDF EOB Extractor](https://github.com/pranay-eligeti/pdf-eob-extractor) | PDF parsing, LLM-assisted structured extraction and Business Central-ready mapping |
-| [📋 SimplePractice Form Automation](https://github.com/pranay-eligeti/simplepractice-form-automation) | Playwright automation, Excel-driven workflows and recovery/logging patterns |
-| [📈 Telegram-to-MT5 Trading Bot](https://github.com/pranay-eligeti/telegram-mt5-trading-bot) | Async event processing, multilingual signal parsing and automated execution |
-| [🔌 MCP → n8n Agentic Gateway](./projects/mcp-n8n-agent-gateway/) | Typed MCP tools, allowlisted workflow dispatch, policy boundary, n8n adapter, in-memory protocol tests |
+| **[AI Evaluation Harness](https://github.com/pranay-eligeti/ai-evaluation-harness)** | Python framework with Recall@K, Precision@K, MRR, citation and answer metrics, semantic relevance/groundedness judges, optional OpenAI and Anthropic adapters, CLI reports, and quality gates. Verified with pytest, strict mypy, Ruff, and GitHub Actions. |
+| **[RAG Knowledge Assistant](https://github.com/pranay-eligeti/rag-knowledge-assistant)** | PDF/Markdown/text ingestion, overlapping chunks, TF-IDF retrieval, an optional dense retrieval adapter, structured citations, FastAPI endpoints, OpenAI Responses API generation, and retrieval/API tests. |
+| **[MCP Action Gateway](https://github.com/pranay-eligeti/mcp-action-gateway)** | Typed MCP tools and resources, an action registry, allowlist and approval checks, structured audit events, an optional n8n webhook adapter, and in-memory protocol tests. |
+| **[Healthcare Lead Automation](https://github.com/pranay-eligeti/healthcare-lead-automation)** | Configurable Python/pandas pipeline for specialty/state filtering, blacklist checks, contact normalization, deduplication, validation, anomaly flags, and reproducible CSV exports. Includes synthetic data, tests, and CI. |
+| **[Spreadsheet-Driven Browser Automation](https://github.com/pranay-eligeti/simplepractice-form-automation)** | Excel ingestion with openpyxl, field mapping and validation, asynchronous Playwright form submission, success verification, per-record failure handling, and logging against a local fixture. |
 
----
+Additional automation work: [Document AI EOB Extractor](https://github.com/pranay-eligeti/pdf-eob-extractor) and [Healthcare Listing Acquisition](https://github.com/pranay-eligeti/google-maps-healthcare-scraper).
 
 ## Core Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
-![Anthropic](https://img.shields.io/badge/Claude_API-191919?style=flat&logo=anthropic&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI_API-000000?style=flat&logo=openai&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+**Python engineering:** Python, FastAPI, Pydantic, pandas, SQL, REST APIs, JSON.
 
----
+**AI and workflows:** OpenAI API, Anthropic API, RAG, LLM evaluation, n8n, Playwright.
 
-## Professional Experience
+**Quality and delivery:** Git, GitHub, pytest, GitHub Actions; strict mypy and Ruff in the evaluation harness.
 
-I work on healthcare and operations automation, including provider-data acquisition, multi-step data cleaning and standardization, AI-assisted document processing, browser automation, workflow orchestration, and operational reporting.
+## Current Engineering Focus
 
-My professional work includes private systems that **cannot be published publicly**. The repositories here are sanitized portfolio implementations or independently publishable projects intended to demonstrate engineering patterns without exposing PHI, credentials, internal data, or proprietary code.
+I connect retrieval, generation, evaluation, and controlled actions through clear interfaces, validated data, repeatable tests, and inspectable outputs. The repositories above make those capabilities concrete through runnable examples and automated checks.
 
----
+## Professional Context
 
-## What I'm Building Next
+As an **Outreach Analyst at Pure Medical Group LLC / 24/7 DCT**, I work across healthcare data operations, Python automation, workflow ownership, systems integration, and operational reporting. I progressed from Data Coordinator to Outreach Analyst in August 2026.
 
-- RAG knowledge assistant
-- AI evaluation harness
-- Production Python AI API
-- Docker + CI/CD deployment
-- Azure AI/data deployment
-
----
+Public automation repositories use synthetic fixtures and publishable implementations of engineering patterns. Employer data, PHI, credentials, private endpoints, and proprietary systems stay outside this portfolio.
 
 ## Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pranay-eligeti)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/pranay-eligeti)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:pranayyeligeti@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/pranay-eligeti) · [GitHub](https://github.com/pranay-eligeti) · [Email](mailto:pranayyeligeti@gmail.com)
 
----
-
-### Building toward production AI engineering — one defensible project at a time.
+Open to remote opportunities in AI automation, Python development, workflow engineering, and AI systems integration.
