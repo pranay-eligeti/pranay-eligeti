@@ -1,5 +1,7 @@
 # MCP → n8n Agentic Automation Gateway
 
+Current maintained implementation: [MCP Action Gateway](https://github.com/pranay-eligeti/mcp-action-gateway). This directory preserves the earlier snapshot.
+
 > A typed MCP gateway that gives an AI host a controlled interface for validating and dispatching allowlisted workflow actions.
 
 ## What this demonstrates

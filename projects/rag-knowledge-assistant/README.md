@@ -1,5 +1,7 @@
 # RAG Knowledge Assistant
 
+Current maintained implementation: [RAG Knowledge Assistant](https://github.com/pranay-eligeti/rag-knowledge-assistant). This directory preserves the earlier snapshot.
+
 > A testable Retrieval-Augmented Generation pipeline with chunking, embeddings, Qdrant vector search, citation-aware retrieval, and an optional Claude answer layer.
 
 ## What this demonstrates
