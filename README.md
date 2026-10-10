@@ -1,48 +1,47 @@
 # Pranay Eligeti
 
-**AI Automation Developer | Python & Workflow Automation | RAG & LLM Evaluation | Generative AI | Data Pipelines & Systems Integration**
+**AI Automation & Applied AI Engineer | Python | Agentic AI & MCP | RAG & LLM Evaluation | FastAPI & Workflow Systems**
 
-I build applied AI systems, Python data pipelines, and workflow integrations that turn operational needs into reliable, testable software.
+I build applied AI and automation systems that connect models, retrieval, evaluation, APIs, and controlled actions through reliable Python engineering.
 
 ## What I Build
 
-- **AI and retrieval systems:** document ingestion, chunking, TF-IDF and dense retrieval, source attribution, and LLM API integration.
-- **Evaluation infrastructure:** deterministic retrieval and citation metrics, semantic LLM judges, captured RAG runs, baseline/candidate regression comparisons, and quality gates.
-- **Automation and data systems:** configurable cleaning pipelines, spreadsheet-driven browser workflows, document extraction, and validated outputs.
-- **Workflow and API integration:** n8n orchestration, REST APIs, typed MCP tools, action policies, and audit events.
+- **Agentic AI and tool integration:** typed MCP tools, action policies, approval boundaries, audit events, and workflow adapters.
+- **RAG and retrieval systems:** document ingestion, chunking, TF-IDF and dense retrieval, source attribution, grounded generation, and retrieval evaluation.
+- **LLM evaluation infrastructure:** deterministic retrieval/citation metrics, semantic judges, captured runs, baseline-vs-candidate regression analysis, and quality gates.
+- **Backend and automation:** FastAPI, Pydantic, REST APIs, n8n, Playwright, structured data pipelines, document extraction, and browser workflows.
+- **Engineering quality:** pytest, GitHub Actions, Ruff, strict mypy in the evaluation harness, versioned JSON contracts, offline fixtures, and reproducible builds.
 
 ## Featured Engineering Projects
 
 | Project | Implemented engineering |
 | --- | --- |
-| **[AI Evaluation Harness](https://github.com/pranay-eligeti/ai-evaluation-harness)** | Python framework with Recall@K, Precision@K, MRR, citation and answer metrics, semantic relevance/groundedness judges, optional OpenAI and Anthropic adapters, CLI reports, captured runs, case-level regression diffs, and absolute/regression gates. Verified with pytest, strict mypy, Ruff, and GitHub Actions. |
-| **[RAG Knowledge Assistant](https://github.com/pranay-eligeti/rag-knowledge-assistant)** | PDF/Markdown/text ingestion, overlapping chunks, TF-IDF retrieval, an optional dense retrieval adapter, structured citations, FastAPI endpoints, optional OpenAI Responses API generation, offline capture export, and retrieval/API tests. |
-| **[MCP Action Gateway](https://github.com/pranay-eligeti/mcp-action-gateway)** | Typed MCP tools and resources, an action registry, allowlist and approval checks, structured audit events, an optional n8n webhook adapter, and in-memory protocol tests. |
-| **[Healthcare Lead Automation](https://github.com/pranay-eligeti/healthcare-lead-automation)** | Configurable Python/pandas pipeline for specialty/state filtering, blacklist checks, contact normalization, deduplication, validation, anomaly flags, and reproducible CSV exports. Includes synthetic data, tests, and CI. |
-| **[Spreadsheet-Driven Browser Automation](https://github.com/pranay-eligeti/simplepractice-form-automation)** | Excel ingestion with openpyxl, field mapping and validation, asynchronous Playwright form submission, success verification, per-record failure handling, and logging against a local fixture. |
+| **[AI Evaluation Harness](https://github.com/pranay-eligeti/ai-evaluation-harness)** | Python RAG/LLM evaluation framework with Recall@K, Precision@K, MRR, citation/answer metrics, semantic relevance/groundedness judges, OpenAI/Anthropic adapters, captured runs, case-level regression diffs, absolute/regression gates, CLI reports, strict typing, packaging, and CI. |
+| **[RAG Knowledge Assistant](https://github.com/pranay-eligeti/rag-knowledge-assistant)** | PDF/Markdown/text ingestion, overlapping chunks, TF-IDF retrieval, optional dense retrieval, structured citations, FastAPI endpoints, optional OpenAI generation, offline capture export, and retrieval/API tests. |
+| **[MCP Action Gateway](https://github.com/pranay-eligeti/mcp-action-gateway)** | Typed MCP tools/resources, allowlisted actions, approval checks, audit events, protected webhook dispatch, and in-memory protocol tests. |
+| **[Healthcare Lead Automation](https://github.com/pranay-eligeti/healthcare-lead-automation)** | Configurable Python/pandas pipeline with filtering, contact normalization, deduplication, validation, anomaly flags, reproducible outputs, tests, and CI using public-safe fixtures. |
+| **[Spreadsheet-Driven Browser Automation](https://github.com/pranay-eligeti/simplepractice-form-automation)** | Excel ingestion, field validation, asynchronous Playwright automation, success verification, per-record recovery, structured logging, and offline browser tests. |
 
-Additional automation work: [Document AI EOB Extractor](https://github.com/pranay-eligeti/pdf-eob-extractor) and [Healthcare Listing Acquisition](https://github.com/pranay-eligeti/google-maps-healthcare-scraper).
+Additional work: [Document AI EOB Extractor](https://github.com/pranay-eligeti/pdf-eob-extractor), [Healthcare Listing Acquisition](https://github.com/pranay-eligeti/google-maps-healthcare-scraper), and [SpecTrace](https://github.com/pranay-eligeti/spectrace), my academic major-project concept for AI-assisted software verification and requirements traceability.
 
 ## Core Stack
 
-**Python engineering:** Python, FastAPI, Pydantic, pandas, SQL, REST APIs, JSON.
+**AI / LLM:** OpenAI SDK & API, Anthropic SDK & API, RAG, LLM evaluation, MCP, tool calling, structured outputs.
 
-**AI and workflows:** OpenAI API, Anthropic API, RAG, LLM evaluation, n8n, Playwright.
+**Backend / Python:** Python, FastAPI, Pydantic, pandas, SQL, REST APIs, JSON, webhooks.
 
-**Quality and delivery:** Git, GitHub, pytest, GitHub Actions; strict mypy in the evaluation harness and Ruff across the primary repositories.
+**Automation:** n8n, Playwright, openpyxl, data pipelines, browser automation, document extraction.
 
-## Current Engineering Focus
+**Quality / Delivery:** pytest, GitHub Actions, Ruff, mypy, Git, packaging, deterministic fixtures, regression gates.
 
-I connect retrieval, generation, evaluation, and controlled actions through clear interfaces, validated data, repeatable tests, and inspectable outputs. RAG Knowledge Assistant exports captured outputs; AI Evaluation Harness measures their quality and regressions; MCP Action Gateway controls operational actions. The repositories above make those capabilities concrete through runnable examples and automated checks.
+## Engineering Focus
 
-## Professional Context
+I am especially interested in roles where AI systems have to do more than generate text: retrieve evidence, call tools, expose APIs, pass quality gates, handle failures, and integrate safely with real workflows.
 
-As an **Outreach Analyst at Pure Medical Group LLC / 24/7 DCT**, I work across healthcare data operations, Python automation, workflow ownership, systems integration, and operational reporting. I progressed from Data Coordinator to Outreach Analyst in August 2026.
-
-Public automation repositories use synthetic fixtures and publishable implementations of engineering patterns. Employer data, PHI, credentials, private endpoints, and proprietary systems stay outside this portfolio.
+Current growth areas include cloud deployment, containers/Kubernetes, observability/tracing, production databases, and deeper backend/system-design skills.
 
 ## Connect
 
 [LinkedIn](https://www.linkedin.com/in/pranay-eligeti) · [GitHub](https://github.com/pranay-eligeti) · [Email](mailto:pranayyeligeti@gmail.com)
 
-Open to remote opportunities in AI automation, Python development, workflow engineering, and AI systems integration.
+Open to full-time, part-time, contract, freelance, remote, hybrid, and on-site opportunities across Applied AI, AI Automation, Python Engineering, RAG/GenAI, agentic systems, and workflow integration.
