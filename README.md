@@ -1,6 +1,6 @@
 # Pranay Eligeti
 
-**AI Automation & Applied AI Engineer | Python | Agentic AI & MCP | RAG & LLM Evaluation | FastAPI & Workflow Systems**
+**Applied AI & Automation Engineer | Python | Agentic AI & MCP | RAG & LLM Evaluation | FastAPI | AI Systems**
 
 I build applied AI and automation systems that connect models, retrieval, evaluation, APIs, and controlled actions through reliable Python engineering.
 
@@ -44,4 +44,4 @@ Current growth areas include cloud deployment, containers/Kubernetes, observabil
 
 [LinkedIn](https://www.linkedin.com/in/pranay-eligeti) · [GitHub](https://github.com/pranay-eligeti) · [Email](mailto:pranayyeligeti@gmail.com)
 
-Open to full-time, part-time, contract, freelance, remote, hybrid, and on-site opportunities across Applied AI, AI Automation, Python Engineering, RAG/GenAI, agentic systems, and workflow integration.
+Open to full-time, part-time, contract, freelance, remote, hybrid, and on-site opportunities across Applied AI, AI Automation, Python Engineering, RAG/GenAI, agentic systems, backend AI services, and workflow integration.
